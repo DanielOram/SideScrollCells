@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB7F21DD294F200C38397 /* AppDelegate.swift */; };
+		EF6FB7F51DD294F200C38397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB7F41DD294F200C38397 /* ViewController.swift */; };
+		EF6FB7F81DD294F200C38397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F61DD294F200C38397 /* Main.storyboard */; };
+		EF6FB7FA1DD294F200C38397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F91DD294F200C38397 /* Assets.xcassets */; };
+		EF6FB7FD1DD294F200C38397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7FB1DD294F200C38397 /* LaunchScreen.storyboard */; };
+		EF6FB8081DD294F200C38397 /* SideScrollCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8071DD294F200C38397 /* SideScrollCellsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF6FB8041DD294F200C38397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6FB7E71DD294F100C38397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6FB7EE1DD294F100C38397;
+			remoteInfo = SideScrollCells;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF6FB7EF1DD294F200C38397 /* SideScrollCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideScrollCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6FB7F21DD294F200C38397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF6FB7F41DD294F200C38397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF6FB7F71DD294F200C38397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF6FB7F91DD294F200C38397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF6FB7FC1DD294F200C38397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF6FB7FE1DD294F200C38397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6FB8031DD294F200C38397 /* SideScrollCellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideScrollCellsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6FB8071DD294F200C38397 /* SideScrollCellsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScrollCellsTests.swift; sourceTree = "<group>"; };
+		EF6FB8091DD294F200C38397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF6FB7EC1DD294F100C38397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FB8001DD294F200C38397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF6FB7E61DD294F100C38397 = {
+			isa = PBXGroup;
+			children = (
+				EF6FB7F11DD294F200C38397 /* SideScrollCells */,
+				EF6FB8061DD294F200C38397 /* SideScrollCellsTests */,
+				EF6FB7F01DD294F200C38397 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6FB7F01DD294F200C38397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6FB7EF1DD294F200C38397 /* SideScrollCells.app */,
+				EF6FB8031DD294F200C38397 /* SideScrollCellsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6FB7F11DD294F200C38397 /* SideScrollCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF6FB7F21DD294F200C38397 /* AppDelegate.swift */,
+				EF6FB7F41DD294F200C38397 /* ViewController.swift */,
+				EF6FB7F61DD294F200C38397 /* Main.storyboard */,
+				EF6FB7F91DD294F200C38397 /* Assets.xcassets */,
+				EF6FB7FB1DD294F200C38397 /* LaunchScreen.storyboard */,
+				EF6FB7FE1DD294F200C38397 /* Info.plist */,
+			);
+			path = SideScrollCells;
+			sourceTree = "<group>";
+		};
+		EF6FB8061DD294F200C38397 /* SideScrollCellsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF6FB8071DD294F200C38397 /* SideScrollCellsTests.swift */,
+				EF6FB8091DD294F200C38397 /* Info.plist */,
+			);
+			path = SideScrollCellsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF6FB7EE1DD294F100C38397 /* SideScrollCells */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6FB80C1DD294F200C38397 /* Build configuration list for PBXNativeTarget "SideScrollCells" */;
+			buildPhases = (
+				EF6FB7EB1DD294F100C38397 /* Sources */,
+				EF6FB7EC1DD294F100C38397 /* Frameworks */,
+				EF6FB7ED1DD294F100C38397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideScrollCells;
+			productName = SideScrollCells;
+			productReference = EF6FB7EF1DD294F200C38397 /* SideScrollCells.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF6FB8021DD294F200C38397 /* SideScrollCellsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6FB80F1DD294F200C38397 /* Build configuration list for PBXNativeTarget "SideScrollCellsTests" */;
+			buildPhases = (
+				EF6FB7FF1DD294F200C38397 /* Sources */,
+				EF6FB8001DD294F200C38397 /* Frameworks */,
+				EF6FB8011DD294F200C38397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6FB8051DD294F200C38397 /* PBXTargetDependency */,
+			);
+			name = SideScrollCellsTests;
+			productName = SideScrollCellsTests;
+			productReference = EF6FB8031DD294F200C38397 /* SideScrollCellsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF6FB7E71DD294F100C38397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Daniel Oram";
+				TargetAttributes = {
+					EF6FB7EE1DD294F100C38397 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RKVLX6G3P7;
+						ProvisioningStyle = Automatic;
+					};
+					EF6FB8021DD294F200C38397 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RKVLX6G3P7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF6FB7EE1DD294F100C38397;
+					};
+				};
+			};
+			buildConfigurationList = EF6FB7EA1DD294F100C38397 /* Build configuration list for PBXProject "SideScrollCells" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6FB7E61DD294F100C38397;
+			productRefGroup = EF6FB7F01DD294F200C38397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6FB7EE1DD294F100C38397 /* SideScrollCells */,
+				EF6FB8021DD294F200C38397 /* SideScrollCellsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6FB7ED1DD294F100C38397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6FB7FD1DD294F200C38397 /* LaunchScreen.storyboard in Resources */,
+				EF6FB7FA1DD294F200C38397 /* Assets.xcassets in Resources */,
+				EF6FB7F81DD294F200C38397 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FB8011DD294F200C38397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF6FB7EB1DD294F100C38397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6FB7F51DD294F200C38397 /* ViewController.swift in Sources */,
+				EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FB7FF1DD294F200C38397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6FB8081DD294F200C38397 /* SideScrollCellsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF6FB8051DD294F200C38397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6FB7EE1DD294F100C38397 /* SideScrollCells */;
+			targetProxy = EF6FB8041DD294F200C38397 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF6FB7F61DD294F200C38397 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6FB7F71DD294F200C38397 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF6FB7FB1DD294F200C38397 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6FB7FC1DD294F200C38397 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF6FB80A1DD294F200C38397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF6FB80B1DD294F200C38397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6FB80D1DD294F200C38397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RKVLX6G3P7;
+				INFOPLIST_FILE = SideScrollCells/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieloram.ios.SideScrollCells;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF6FB80E1DD294F200C38397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RKVLX6G3P7;
+				INFOPLIST_FILE = SideScrollCells/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieloram.ios.SideScrollCells;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EF6FB8101DD294F200C38397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RKVLX6G3P7;
+				INFOPLIST_FILE = SideScrollCellsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieloram.ios.SideScrollCellsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideScrollCells.app/SideScrollCells";
+			};
+			name = Debug;
+		};
+		EF6FB8111DD294F200C38397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RKVLX6G3P7;
+				INFOPLIST_FILE = SideScrollCellsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieloram.ios.SideScrollCellsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideScrollCells.app/SideScrollCells";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF6FB7EA1DD294F100C38397 /* Build configuration list for PBXProject "SideScrollCells" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6FB80A1DD294F200C38397 /* Debug */,
+				EF6FB80B1DD294F200C38397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6FB80C1DD294F200C38397 /* Build configuration list for PBXNativeTarget "SideScrollCells" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6FB80D1DD294F200C38397 /* Debug */,
+				EF6FB80E1DD294F200C38397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF6FB80F1DD294F200C38397 /* Build configuration list for PBXNativeTarget "SideScrollCellsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6FB8101DD294F200C38397 /* Debug */,
+				EF6FB8111DD294F200C38397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF6FB7E71DD294F100C38397 /* Project object */;
+}
