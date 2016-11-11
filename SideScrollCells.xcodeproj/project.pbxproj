@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1B2AC01DD5733E00ECB942 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */; };
 		EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB7F21DD294F200C38397 /* AppDelegate.swift */; };
-		EF6FB7F51DD294F200C38397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB7F41DD294F200C38397 /* ViewController.swift */; };
 		EF6FB7F81DD294F200C38397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F61DD294F200C38397 /* Main.storyboard */; };
 		EF6FB7FA1DD294F200C38397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F91DD294F200C38397 /* Assets.xcassets */; };
 		EF6FB7FD1DD294F200C38397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7FB1DD294F200C38397 /* LaunchScreen.storyboard */; };
 		EF6FB8081DD294F200C38397 /* SideScrollCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8071DD294F200C38397 /* SideScrollCellsTests.swift */; };
 		EF6FB8131DD321DF00C38397 /* HorizontalSlideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8121DD321DF00C38397 /* HorizontalSlideTableViewController.swift */; };
 		EF6FB8151DD3236700C38397 /* HorizontalSlideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8141DD3236700C38397 /* HorizontalSlideTableViewCell.swift */; };
+		EF6FB8191DD5641200C38397 /* InnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8181DD5641200C38397 /* InnerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
 		EF6FB7EF1DD294F200C38397 /* SideScrollCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideScrollCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6FB7F21DD294F200C38397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF6FB7F41DD294F200C38397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF6FB7F71DD294F200C38397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF6FB7F91DD294F200C38397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6FB7FC1DD294F200C38397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		EF6FB8091DD294F200C38397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6FB8121DD321DF00C38397 /* HorizontalSlideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSlideTableViewController.swift; sourceTree = "<group>"; };
 		EF6FB8141DD3236700C38397 /* HorizontalSlideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSlideTableViewCell.swift; sourceTree = "<group>"; };
+		EF6FB8181DD5641200C38397 /* InnerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				EF6FB7F91DD294F200C38397 /* Assets.xcassets */,
 				EF6FB7FB1DD294F200C38397 /* LaunchScreen.storyboard */,
 				EF6FB7FE1DD294F200C38397 /* Info.plist */,
+				EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */,
 			);
 			path = SideScrollCells;
 			sourceTree = "<group>";
@@ -104,7 +107,6 @@
 		EF6FB8161DD3237A00C38397 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF6FB7F41DD294F200C38397 /* ViewController.swift */,
 				EF6FB8121DD321DF00C38397 /* HorizontalSlideTableViewController.swift */,
 			);
 			name = Controllers;
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				EF6FB8141DD3236700C38397 /* HorizontalSlideTableViewCell.swift */,
+				EF6FB8181DD5641200C38397 /* InnerCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -223,7 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6FB7F51DD294F200C38397 /* ViewController.swift in Sources */,
+				EF6FB8191DD5641200C38397 /* InnerCollectionViewCell.swift in Sources */,
+				EF1B2AC01DD5733E00ECB942 /* HelperMethods.swift in Sources */,
 				EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */,
 				EF6FB8131DD321DF00C38397 /* HorizontalSlideTableViewController.swift in Sources */,
 				EF6FB8151DD3236700C38397 /* HorizontalSlideTableViewCell.swift in Sources */,
@@ -434,6 +438,7 @@
 				EF6FB80E1DD294F200C38397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF6FB80F1DD294F200C38397 /* Build configuration list for PBXNativeTarget "SideScrollCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +447,7 @@
 				EF6FB8111DD294F200C38397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

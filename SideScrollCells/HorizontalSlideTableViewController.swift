@@ -10,7 +10,9 @@ import UIKit
 
 class HorizontalSlideTableViewController: UITableViewController {
     
-    var dummyCellData = [1,2,3,4,5,6,7,8,9,10]
+    //var dummyCellData = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    
+    let model: [[UIColor]] = generateRandomData()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,21 +38,30 @@ class HorizontalSlideTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return dummyCellData.count
+        return model.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HorizontalSlideCell", for: indexPath)
+        //let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         
         // Configure the cell...
         
-        cell.textLabel?.text = String(dummyCellData[indexPath.row])
+        //cell.textLabel?.text = String(dummyCellData[indexPath.row])
 
         return cell
     }
- 
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let tableViewCell = cell as? HorizontalSlideTableViewCell else {
+            print("not correct cell type")
+            return }
+        
+        tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -96,5 +107,29 @@ class HorizontalSlideTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    
 }
+
+
+
+extension HorizontalSlideTableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        
+        return model[collectionView.tag].count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InnerCollectionViewCell",
+                                                      for: indexPath as IndexPath)
+        
+        cell.backgroundColor = model[collectionView.tag][indexPath.item]
+        
+        return cell
+    }
+}
+
