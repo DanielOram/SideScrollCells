@@ -160,7 +160,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HorizontalSlideCell" rowHeight="120" id="ePO-Sk-5Am" customClass="HorizontalSlideTableViewCell" customModule="SideScrollCells" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="HorizontalSlideCell" rowHeight="120" id="ePO-Sk-5Am" customClass="HorizontalSlideTableViewCell" customModule="SideScrollCells" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ePO-Sk-5Am" id="2qO-xd-mvw">
@@ -184,6 +184,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </view>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <size key="customSize" width="120" height="120"/>
                                                 </collectionViewCell>
                                             </cells>

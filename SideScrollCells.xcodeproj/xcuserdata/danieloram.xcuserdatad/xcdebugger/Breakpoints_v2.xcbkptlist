@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SideScrollCells/HorizontalSlideTableViewController.swift"
-            timestampString = "500531242.676721"
+            timestampString = "500537513.522647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "HorizontalSlideTableViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SideScrollCells/HorizontalSlideTableViewCell.swift"
-            timestampString = "500527104.661083"
+            timestampString = "500537513.522647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "setCollectionViewDataSourceDelegate(dataSourceDelegate:forRow:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SideScrollCells/HorizontalSlideTableViewController.swift"
-            timestampString = "500534517.893791"
+            timestampString = "500537513.522647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "HorizontalSlideTableViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SideScrollCells/HorizontalSlideTableViewController.swift"
-            timestampString = "500534517.893791"
+            timestampString = "500537513.522647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "HorizontalSlideTableViewController"
             landmarkType = "4">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SideScrollCells/HorizontalSlideTableViewController.swift"
-            timestampString = "500534534.6916"
+            timestampString = "500537513.522647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "tableView(_:willDisplay:forRowAt:)"
             landmarkType = "7">
          </BreakpointContent>

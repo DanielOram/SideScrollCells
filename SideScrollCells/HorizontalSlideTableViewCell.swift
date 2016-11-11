@@ -12,6 +12,18 @@ class HorizontalSlideTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var collectionView: UICollectionView!
     
+    //computed value for remembering content offset of collectionview
+    
+    var collectionViewOffset: CGFloat {
+        get {
+            return collectionView.contentOffset.x
+        }
+        
+        set {
+            collectionView.contentOffset.x = newValue
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

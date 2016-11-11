@@ -10,9 +10,8 @@ import UIKit
 
 class HorizontalSlideTableViewController: UITableViewController {
     
-    //var dummyCellData = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-    
     let model: [[UIColor]] = generateRandomData()
+    var storedOffsets = [Int: CGFloat]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,13 +52,23 @@ class HorizontalSlideTableViewController: UITableViewController {
         return cell
     }
     
+    //called before cells displayed
+    
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        guard let tableViewCell = cell as? HorizontalSlideTableViewCell else {
-            print("not correct cell type")
-            return }
+        guard let tableViewCell = cell as? HorizontalSlideTableViewCell else { return }
         
         tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
+        tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
+    }
+    
+    //called after cell displayed
+    
+    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let tableViewCell = cell as? HorizontalSlideTableViewCell else { return }
+        
+        storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
     
 
