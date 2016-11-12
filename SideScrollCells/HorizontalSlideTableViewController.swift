@@ -136,7 +136,12 @@ extension HorizontalSlideTableViewController: UICollectionViewDelegate, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InnerCollectionViewCell",
                                                       for: indexPath as IndexPath)
         
+        //format inner collectionview cells
+        
         cell.backgroundColor = model[collectionView.tag][indexPath.item]
+        
+//        cell.layer.borderWidth = 1.0
+//        cell.layer.borderColor = UIColor.black.cgColor
         
         return cell
     }
