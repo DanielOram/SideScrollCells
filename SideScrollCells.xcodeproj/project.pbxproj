@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D015C3FAC8BB3FF14FCEEB8 /* Pods_SideScrollCells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3812E80DCCC118521868D3E /* Pods_SideScrollCells.framework */; };
 		EF1B2AC01DD5733E00ECB942 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */; };
 		EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB7F21DD294F200C38397 /* AppDelegate.swift */; };
 		EF6FB7F81DD294F200C38397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F61DD294F200C38397 /* Main.storyboard */; };
@@ -29,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ACB59144BD9F5B4112AD387 /* Pods-SideScrollCells.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideScrollCells.release.xcconfig"; path = "Pods/Target Support Files/Pods-SideScrollCells/Pods-SideScrollCells.release.xcconfig"; sourceTree = "<group>"; };
+		B2096364329D27BD6075756B /* Pods-SideScrollCells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SideScrollCells.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SideScrollCells/Pods-SideScrollCells.debug.xcconfig"; sourceTree = "<group>"; };
+		B3812E80DCCC118521868D3E /* Pods_SideScrollCells.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SideScrollCells.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
 		EF6FB7EF1DD294F200C38397 /* SideScrollCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideScrollCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6FB7F21DD294F200C38397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D015C3FAC8BB3FF14FCEEB8 /* Pods_SideScrollCells.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17522DE24C2380F9107128FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2096364329D27BD6075756B /* Pods-SideScrollCells.debug.xcconfig */,
+				0ACB59144BD9F5B4112AD387 /* Pods-SideScrollCells.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		828309278B2756C56973D278 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3812E80DCCC118521868D3E /* Pods_SideScrollCells.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF6FB7E61DD294F100C38397 = {
 			isa = PBXGroup;
 			children = (
 				EF6FB7F11DD294F200C38397 /* SideScrollCells */,
 				EF6FB8061DD294F200C38397 /* SideScrollCellsTests */,
 				EF6FB7F01DD294F200C38397 /* Products */,
+				17522DE24C2380F9107128FD /* Pods */,
+				828309278B2756C56973D278 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF6FB80C1DD294F200C38397 /* Build configuration list for PBXNativeTarget "SideScrollCells" */;
 			buildPhases = (
+				D89125D0AA320F2123185DF1 /* [CP] Check Pods Manifest.lock */,
 				EF6FB7EB1DD294F100C38397 /* Sources */,
 				EF6FB7EC1DD294F100C38397 /* Frameworks */,
 				EF6FB7ED1DD294F100C38397 /* Resources */,
+				230167B4DB17A5420BA3FFBF /* [CP] Embed Pods Frameworks */,
+				97287EA5342D9E14A200C815 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +247,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		230167B4DB17A5420BA3FFBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SideScrollCells/Pods-SideScrollCells-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97287EA5342D9E14A200C815 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SideScrollCells/Pods-SideScrollCells-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89125D0AA320F2123185DF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF6FB7EB1DD294F100C38397 /* Sources */ = {
@@ -365,6 +440,7 @@
 		};
 		EF6FB80D1DD294F200C38397 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2096364329D27BD6075756B /* Pods-SideScrollCells.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RKVLX6G3P7;
@@ -378,6 +454,7 @@
 		};
 		EF6FB80E1DD294F200C38397 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ACB59144BD9F5B4112AD387 /* Pods-SideScrollCells.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RKVLX6G3P7;
