@@ -10,11 +10,15 @@ import UIKit
 
 class DashboardTableViewController: UITableViewController {
 
+    @IBOutlet weak var ActivityIndicator_1: UIActivityIndicatorView!
     @IBOutlet weak var ActivityIndicator_2: UIActivityIndicatorView!
+    @IBOutlet weak var ActivityIndicator_3: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        hideAllActivityIndicators()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,18 +30,24 @@ class DashboardTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func hideAllActivityIndicators(){
+        ActivityIndicator_1.isHidden = true
+        ActivityIndicator_2.isHidden = true
+        ActivityIndicator_3.isHidden = true
+    }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

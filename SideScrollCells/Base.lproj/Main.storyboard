@@ -102,7 +102,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="2bI-HL-lqR"/>
                     <connections>
+                        <outlet property="ActivityIndicator_1" destination="Pmj-Kt-dtq" id="Gmr-2m-0ix"/>
                         <outlet property="ActivityIndicator_2" destination="jDw-BQ-89y" id="0yL-nD-HUN"/>
+                        <outlet property="ActivityIndicator_3" destination="jsA-nB-25U" id="G1A-pA-YW8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0P-Lj-Mg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
