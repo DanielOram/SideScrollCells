@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.0.1)
+  - FlickrKit (1.0.8)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - FlickrKit
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  FlickrKit: beadf880a10ccaa2f13666d04112324fe08815e2
 
-PODFILE CHECKSUM: 6c03a5672e3c0c3a97f2ae8eff5da1260fe5c56a
+PODFILE CHECKSUM: 7b339595e99a8115c34b2532d46df858117047ea
 
 COCOAPODS: 1.1.0.rc.3

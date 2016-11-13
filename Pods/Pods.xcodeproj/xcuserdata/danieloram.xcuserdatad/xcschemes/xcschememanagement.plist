@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FlickrKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SideScrollCells.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -16,6 +21,22 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>56BD1EA4485F5AE87E9C0E82D6534633</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71498807FD5C9BA6FA8BD25795D84DA1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
