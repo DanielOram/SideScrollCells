@@ -32,7 +32,7 @@ class HorizontalSlideTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,6 +69,20 @@ class HorizontalSlideTableViewController: UITableViewController {
         guard let tableViewCell = cell as? HorizontalSlideTableViewCell else { return }
         
         storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
+    }
+    
+    
+    //add custom headerview to table
+    
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let header = UIView()
+//        header.backgroundColor = UIColor.red
+//        
+//        return header
+//    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "header section"
     }
     
 
