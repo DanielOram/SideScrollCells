@@ -8,10 +8,29 @@
 
 import UIKit
 
-class HorizontalSlideTableViewController: UITableViewController {
+class HorizontalSlideTableViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     let model: [[UIColor]] = generateRandomData()
     var storedOffsets = [Int: CGFloat]()
+    
+    var cellCharLabel: UILabel!
+    
+//    var cellCharLabel: UILabel {
+//        get {
+//            if self.cellCharLabel != nil {
+//                return self.cellCharLabel
+//            } else {
+//                let label = UILabel()
+//                return label
+//            }
+//        }
+//        
+//        set(newLabel) {
+//            if let label = newLabel as UILabel? {
+//                self.cellCharLabel = label
+//            }
+//        }
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -141,7 +160,9 @@ class HorizontalSlideTableViewController: UITableViewController {
 
 
 
-extension HorizontalSlideTableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HorizontalSlideTableViewController {
+    
+    
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         
@@ -161,13 +182,22 @@ extension HorizontalSlideTableViewController: UICollectionViewDelegate, UICollec
         cell.layer.borderWidth = 1.0
         cell.layer.borderColor = UIColor.black.cgColor
         
+        //remove cellCharLabel view to stop redrawing over top when reused
+        
+        if let labelToRemove = cell.viewWithTag(1) {
+            labelToRemove.removeFromSuperview()
+        }
+        
         //add label with Character
         
-        let cellCharLabel = UILabel(frame: cell.bounds)
-        cellCharLabel.text = Languages.sharedInstance.alphabets[collectionView.tag].set[indexPath.row].char
-        cellCharLabel.textAlignment = .center
-        cellCharLabel.font = UIFont(name: cellCharLabel.font.fontName, size: 40)
-        cell.contentView.addSubview(cellCharLabel)
+        cellCharLabel = UILabel(frame: cell.bounds)
+        cellCharLabel?.tag = 1
+        
+        cellCharLabel?.text = Languages.sharedInstance.alphabets[collectionView.tag].set[indexPath.row].char
+        cellCharLabel?.textAlignment = .center
+        cellCharLabel?.font = UIFont(name: "Helvetica", size: 40)
+        
+        cell.contentView.addSubview(cellCharLabel!)
         
         return cell
     }
