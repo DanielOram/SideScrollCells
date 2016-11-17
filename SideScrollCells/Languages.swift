@@ -11,9 +11,12 @@ import Foundation
 //Localized for English only
 
 class Languages {
+    
+    static let sharedInstance = Languages()
+    
     let alphabets: [Alphabet]!
     
-    init() {
+    private init() {
         alphabets = [Alphabet]()
         
         //add languages
