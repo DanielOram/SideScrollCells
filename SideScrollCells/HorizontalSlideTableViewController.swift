@@ -161,7 +161,13 @@ extension HorizontalSlideTableViewController: UICollectionViewDelegate, UICollec
         cell.layer.borderWidth = 1.0
         cell.layer.borderColor = UIColor.black.cgColor
         
+        //add label with Character
         
+        let cellCharLabel = UILabel(frame: cell.bounds)
+        cellCharLabel.text = Languages.sharedInstance.alphabets[collectionView.tag].set[indexPath.row].char
+        cellCharLabel.textAlignment = .center
+        cellCharLabel.font = UIFont(name: cellCharLabel.font.fontName, size: 40)
+        cell.contentView.addSubview(cellCharLabel)
         
         return cell
     }
