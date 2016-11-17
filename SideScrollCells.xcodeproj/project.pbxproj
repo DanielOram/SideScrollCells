@@ -10,6 +10,7 @@
 		EF1B2AC01DD5733E00ECB942 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */; };
 		EF1B2ACE1DDC392700ECB942 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ACD1DDC392700ECB942 /* Languages.swift */; };
 		EF1B2AD11DDD93D600ECB942 /* English.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2AD01DDD93D600ECB942 /* English.plist */; };
+		EF1B2AD91DDDDC9B00ECB942 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2AD81DDDDC9B00ECB942 /* Settings.swift */; };
 		EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB7F21DD294F200C38397 /* AppDelegate.swift */; };
 		EF6FB7F81DD294F200C38397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F61DD294F200C38397 /* Main.storyboard */; };
 		EF6FB7FA1DD294F200C38397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F91DD294F200C38397 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
 		EF1B2ACD1DDC392700ECB942 /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		EF1B2AD01DDD93D600ECB942 /* English.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = English.plist; sourceTree = "<group>"; };
+		EF1B2AD81DDDDC9B00ECB942 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		EF6FB7EF1DD294F200C38397 /* SideScrollCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideScrollCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6FB7F21DD294F200C38397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF6FB7F71DD294F200C38397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				EF1B2ACD1DDC392700ECB942 /* Languages.swift */,
+				EF1B2AD81DDDDC9B00ECB942 /* Settings.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				EF1B2AC01DD5733E00ECB942 /* HelperMethods.swift in Sources */,
 				EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */,
 				EF6FB8131DD321DF00C38397 /* HorizontalSlideTableViewController.swift in Sources */,
+				EF1B2AD91DDDDC9B00ECB942 /* Settings.swift in Sources */,
 				EF6FB8151DD3236700C38397 /* HorizontalSlideTableViewCell.swift in Sources */,
 				EF1B2ACE1DDC392700ECB942 /* Languages.swift in Sources */,
 			);
