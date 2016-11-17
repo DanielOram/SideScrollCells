@@ -113,9 +113,9 @@
 		EF6FB7F11DD294F200C38397 /* SideScrollCells */ = {
 			isa = PBXGroup;
 			children = (
+				EF6FB7F21DD294F200C38397 /* AppDelegate.swift */,
 				EF1B2ACF1DDD93AB00ECB942 /* Localizations */,
 				EF1B2ACC1DDC391900ECB942 /* Models */,
-				EF6FB7F21DD294F200C38397 /* AppDelegate.swift */,
 				EF6FB8161DD3237A00C38397 /* Controllers */,
 				EF6FB8171DD3238300C38397 /* Cells */,
 				EF1B2AC91DDC34C900ECB942 /* Headers */,
