@@ -32,12 +32,15 @@ class HorizontalSlideTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 5
+        
+        return Languages.sharedInstance.alphabets.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return model.count
+        
+        //one row per language
+        return 1
     }
 
     
@@ -82,7 +85,8 @@ class HorizontalSlideTableViewController: UITableViewController {
 //    }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "header section"
+        
+        return Languages.sharedInstance.alphabets[section].name
     }
     
 
@@ -141,7 +145,7 @@ extension HorizontalSlideTableViewController: UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         
-        return model[collectionView.tag].count
+        return Languages.sharedInstance.alphabets[section].set.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -152,10 +156,12 @@ extension HorizontalSlideTableViewController: UICollectionViewDelegate, UICollec
         
         //format inner collectionview cells
         
-        cell.backgroundColor = model[collectionView.tag][indexPath.item]
+        //cell.backgroundColor = model[collectionView.tag][indexPath.item]
         
-//        cell.layer.borderWidth = 1.0
-//        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1.0
+        cell.layer.borderColor = UIColor.black.cgColor
+        
+        
         
         return cell
     }
