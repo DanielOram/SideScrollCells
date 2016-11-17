@@ -179,8 +179,8 @@ extension HorizontalSlideTableViewController {
         
         //cell.backgroundColor = model[collectionView.tag][indexPath.item]
         
-        cell.layer.borderWidth = 1.0
-        cell.layer.borderColor = UIColor.black.cgColor
+//        cell.layer.borderWidth = 1.0
+//        cell.layer.borderColor = UIColor.black.cgColor
         
         //remove cellCharLabel view to stop redrawing over top when reused
         
