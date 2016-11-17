@@ -11,7 +11,7 @@ import Foundation
 class Settings {
     
     static let defaults = UserDefaults.standard
-    static var localisedData: NSArray?
+    
     
     struct Keys {
         static let SETTINGS_LANGUAGE = "settings_language"
@@ -33,21 +33,26 @@ class Settings {
         
         set(language) {
             defaults.set(language, forKey: self.Keys.SETTINGS_LANGUAGE)
+            
+            //call localisedData to change to new language
+            _ = localisedData
+        }
+    }
+    
+    //localisedData is get only - setting language should set data
+    
+    static var localisedData: NSArray {
+        get {
+            let localisedDataPath = Bundle.main.path(forResource: Settings.settingsLanguage, ofType: "plist")
+            return NSArray(contentsOfFile: localisedDataPath!)!
         }
     }
     
     //load localised strings file
-    
-    func loadLocalisedLanguage() {
-        
-        let localisedDataPath = Bundle.main.path(forResource: Settings.settingsLanguage, ofType: "plist")
-        Settings.localisedData = NSArray(contentsOfFile: localisedDataPath!)
-    }
+
     
     
 }
-
-
 
 
 
