@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Menu</key>
+	<string></string>
+	<key></key>
+	<string></string>
+	<key>Data</key>
+	<dict>
+		<key>Japanese</key>
+		<dict>
+			<key>characterset</key>
+			<string>あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわをん</string>
+			<key>name</key>
+			<string>Japanese</string>
+		</dict>
+		<key>Italian</key>
+		<dict>
+			<key>characterset</key>
+			<string>abcdefghijklmnopqrstuvwxyz</string>
+			<key>name</key>
+			<string>Italian</string>
+		</dict>
+		<key>German</key>
+		<dict>
+			<key>characterset</key>
+			<string>abcdefghijklmnopqrstuvwxyzäöüß</string>
+			<key>name</key>
+			<string>German</string>
+		</dict>
+		<key>French</key>
+		<dict>
+			<key>characterset</key>
+			<string>abcdefghijklmnopqrstuvwxyzéèçëòôöùàâ</string>
+			<key>name</key>
+			<string>French</string>
+		</dict>
+		<key>English</key>
+		<dict>
+			<key>characterset</key>
+			<string>abcdefghijklmnopqrstuvwxyz</string>
+			<key>name</key>
+			<string>English</string>
+		</dict>
+	</dict>
+	<key>Alphabet</key>
+	<string>Alphabet</string>
+</dict>
+</plist>

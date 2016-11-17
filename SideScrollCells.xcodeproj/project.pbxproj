@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EF1B2AC01DD5733E00ECB942 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */; };
 		EF1B2ACE1DDC392700ECB942 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B2ACD1DDC392700ECB942 /* Languages.swift */; };
+		EF1B2AD11DDD93D600ECB942 /* English.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF1B2AD01DDD93D600ECB942 /* English.plist */; };
 		EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB7F21DD294F200C38397 /* AppDelegate.swift */; };
 		EF6FB7F81DD294F200C38397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F61DD294F200C38397 /* Main.storyboard */; };
 		EF6FB7FA1DD294F200C38397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6FB7F91DD294F200C38397 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		EF1B2ABF1DD5733E00ECB942 /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
 		EF1B2ACD1DDC392700ECB942 /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		EF1B2AD01DDD93D600ECB942 /* English.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = English.plist; sourceTree = "<group>"; };
 		EF6FB7EF1DD294F200C38397 /* SideScrollCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideScrollCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6FB7F21DD294F200C38397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF6FB7F71DD294F200C38397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		EF1B2ACF1DDD93AB00ECB942 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B2AD01DDD93D600ECB942 /* English.plist */,
+			);
+			name = Localizations;
+			sourceTree = "<group>";
+		};
 		EF6FB7E61DD294F100C38397 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		EF6FB7F11DD294F200C38397 /* SideScrollCells */ = {
 			isa = PBXGroup;
 			children = (
+				EF1B2ACF1DDD93AB00ECB942 /* Localizations */,
 				EF1B2ACC1DDC391900ECB942 /* Models */,
 				EF6FB7F21DD294F200C38397 /* AppDelegate.swift */,
 				EF6FB8161DD3237A00C38397 /* Controllers */,
@@ -226,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6FB7FD1DD294F200C38397 /* LaunchScreen.storyboard in Resources */,
+				EF1B2AD11DDD93D600ECB942 /* English.plist in Resources */,
 				EF6FB7FA1DD294F200C38397 /* Assets.xcassets in Resources */,
 				EF6FB7F81DD294F200C38397 /* Main.storyboard in Resources */,
 			);
