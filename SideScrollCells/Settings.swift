@@ -35,16 +35,18 @@ class Settings {
             defaults.set(language, forKey: self.Keys.SETTINGS_LANGUAGE)
             
             //call localisedData to change to new language
-            _ = localisedData
+            //_ = localisedData
+            //recreating global singleton model will refresh data to new locale
+            Languages.sharedInstance = Languages()
         }
     }
     
     //localisedData is get only - setting language should set data
     
-    static var localisedData: NSArray {
+    static var localisedData: NSDictionary {
         get {
             let localisedDataPath = Bundle.main.path(forResource: Settings.settingsLanguage, ofType: "plist")
-            return NSArray(contentsOfFile: localisedDataPath!)!
+            return NSDictionary(contentsOfFile: localisedDataPath!)!
         }
     }
     

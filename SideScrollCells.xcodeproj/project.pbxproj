@@ -87,7 +87,6 @@
 		EF1B2ACF1DDD93AB00ECB942 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				EF1B2AD01DDD93D600ECB942 /* English.plist */,
 			);
 			name = Localizations;
 			sourceTree = "<group>";
@@ -114,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				EF6FB7F21DD294F200C38397 /* AppDelegate.swift */,
+				EF1B2AD01DDD93D600ECB942 /* English.plist */,
 				EF1B2ACF1DDD93AB00ECB942 /* Localizations */,
 				EF1B2ACC1DDC391900ECB942 /* Models */,
 				EF6FB8161DD3237A00C38397 /* Controllers */,

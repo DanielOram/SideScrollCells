@@ -10,7 +10,8 @@ import UIKit
 
 class HorizontalSlideTableViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    let model: [[UIColor]] = generateRandomData()
+    //model is the localised data from file
+    var model: [Languages]!
     var storedOffsets = [Int: CGFloat]()
     
     var cellCharLabel: UILabel!
@@ -34,6 +35,7 @@ class HorizontalSlideTableViewController: UITableViewController, UICollectionVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
