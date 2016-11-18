@@ -181,36 +181,20 @@ extension HorizontalSlideTableViewController {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InnerCollectionViewCell",
                                                       for: indexPath as IndexPath)
-        
-        //format inner collectionview cells
-        
-        //cell.backgroundColor = model[collectionView.tag][indexPath.item]
-        
-//        cell.layer.borderWidth = 1.0
-//        cell.layer.borderColor = UIColor.black.cgColor
-        
-        
-        
-        //remove cellCharLabel view to stop redrawing over top when reused
-        
-        if let labelToRemove = cell.viewWithTag(1) {
-            labelToRemove.removeFromSuperview()
-        }
-        
-        //add label with Character
-        
-        cellCharLabel = UILabel(frame: cell.bounds)
-        cellCharLabel?.tag = 1
-        
 
-        print("collectionview tag = \(collectionView.tag)" )
-        cellCharLabel?.text = Languages.sharedInstance.alphabets[collectionView.tag].set[indexPath.row].char
-        cellCharLabel?.textAlignment = .center
-        cellCharLabel?.font = UIFont(name: "Helvetica", size: 40)
-        
-        cell.contentView.addSubview(cellCharLabel!)
-        
+
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        guard let innerCell = cell as? InnerCollectionViewCell else { return }
+        
+        //        cell.layer.borderWidth = 1.0
+        //        cell.layer.borderColor = UIColor.black.cgColor
+        
+        innerCell.CharacterLabel.text = Languages.sharedInstance.alphabets[collectionView.tag].set[indexPath.row].char
+        innerCell.positionNumber.text = "\(indexPath.row)"
     }
 }
 
