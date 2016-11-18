@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var ChooseLanguageCell: UITableViewCell!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
