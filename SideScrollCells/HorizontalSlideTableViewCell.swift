@@ -11,9 +11,7 @@ import UIKit
 class HorizontalSlideTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    var sectionNumber: Int!
-    
+        
     //computed value for remembering content offset of collectionview
         
     var collectionViewOffset: CGFloat {
