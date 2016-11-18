@@ -2,26 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Language</key>
+	<string>English</string>
 	<key>Menu</key>
-	<string></string>
-	<key></key>
-	<string></string>
+	<dict>
+		<key>AllCharacterSets</key>
+		<string>All Character Sets</string>
+		<key>LanguageList</key>
+		<string>List of Languages</string>
+	</dict>
 	<key>Data</key>
 	<dict>
-		<key>Japanese</key>
-		<dict>
-			<key>characterset</key>
-			<string>あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわをん</string>
-			<key>name</key>
-			<string>Japanese</string>
-		</dict>
-		<key>Italian</key>
-		<dict>
-			<key>characterset</key>
-			<string>abcdefghijklmnopqrstuvwxyz</string>
-			<key>name</key>
-			<string>Italian</string>
-		</dict>
 		<key>German</key>
 		<dict>
 			<key>characterset</key>
@@ -42,6 +33,20 @@
 			<string>abcdefghijklmnopqrstuvwxyz</string>
 			<key>name</key>
 			<string>English</string>
+		</dict>
+		<key>Japanese</key>
+		<dict>
+			<key>characterset</key>
+			<string>あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわをん</string>
+			<key>name</key>
+			<string>Japanese</string>
+		</dict>
+		<key>Italian</key>
+		<dict>
+			<key>characterset</key>
+			<string>abcdefghijklmnopqrstuvwxyz</string>
+			<key>name</key>
+			<string>Italian</string>
 		</dict>
 	</dict>
 	<key>Alphabet</key>
