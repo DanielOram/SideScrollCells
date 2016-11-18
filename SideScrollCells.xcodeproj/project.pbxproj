@@ -19,7 +19,8 @@
 		EF6FB8131DD321DF00C38397 /* HorizontalSlideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8121DD321DF00C38397 /* HorizontalSlideTableViewController.swift */; };
 		EF6FB8151DD3236700C38397 /* HorizontalSlideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8141DD3236700C38397 /* HorizontalSlideTableViewCell.swift */; };
 		EF6FB8191DD5641200C38397 /* InnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6FB8181DD5641200C38397 /* InnerCollectionViewCell.swift */; };
-		EFE76F221DDEE379001DFCC9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE76F211DDEE379001DFCC9 /* SettingsViewController.swift */; };
+		EFE76F261DDEE656001DFCC9 /* LanguageOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE76F251DDEE656001DFCC9 /* LanguageOptionsController.swift */; };
+		EFE76F281DDEE6C8001DFCC9 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE76F271DDEE6C8001DFCC9 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,8 @@
 		EF6FB8121DD321DF00C38397 /* HorizontalSlideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSlideTableViewController.swift; sourceTree = "<group>"; };
 		EF6FB8141DD3236700C38397 /* HorizontalSlideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSlideTableViewCell.swift; sourceTree = "<group>"; };
 		EF6FB8181DD5641200C38397 /* InnerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerCollectionViewCell.swift; sourceTree = "<group>"; };
-		EFE76F211DDEE379001DFCC9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EFE76F251DDEE656001DFCC9 /* LanguageOptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageOptionsController.swift; sourceTree = "<group>"; };
+		EFE76F271DDEE6C8001DFCC9 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				EF6FB8121DD321DF00C38397 /* HorizontalSlideTableViewController.swift */,
-				EFE76F211DDEE379001DFCC9 /* SettingsViewController.swift */,
+				EFE76F251DDEE656001DFCC9 /* LanguageOptionsController.swift */,
+				EFE76F271DDEE6C8001DFCC9 /* SettingsController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -264,13 +267,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6FB8191DD5641200C38397 /* InnerCollectionViewCell.swift in Sources */,
+				EFE76F261DDEE656001DFCC9 /* LanguageOptionsController.swift in Sources */,
 				EF1B2AC01DD5733E00ECB942 /* HelperMethods.swift in Sources */,
 				EF6FB7F31DD294F200C38397 /* AppDelegate.swift in Sources */,
 				EF6FB8131DD321DF00C38397 /* HorizontalSlideTableViewController.swift in Sources */,
 				EF1B2AD91DDDDC9B00ECB942 /* Settings.swift in Sources */,
+				EFE76F281DDEE6C8001DFCC9 /* SettingsController.swift in Sources */,
 				EF6FB8151DD3236700C38397 /* HorizontalSlideTableViewCell.swift in Sources */,
 				EF1B2ACE1DDC392700ECB942 /* Languages.swift in Sources */,
-				EFE76F221DDEE379001DFCC9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
