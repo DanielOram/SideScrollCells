@@ -10,4 +10,6 @@ import UIKit
 
 class InnerCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var CharacterLabel: UILabel!
+    @IBOutlet weak var positionNumber: UILabel!
 }
