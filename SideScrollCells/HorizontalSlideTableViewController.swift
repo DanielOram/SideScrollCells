@@ -71,6 +71,8 @@ class HorizontalSlideTableViewController: UITableViewController, UICollectionVie
         
         // Configure the cell...
         
+        //cell.contentView.tag = indexPath.section
+        
         //cell.textLabel?.text = String(dummyCellData[indexPath.row])
 
         return cell
@@ -84,6 +86,9 @@ class HorizontalSlideTableViewController: UITableViewController, UICollectionVie
         
         tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
         tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
+        
+        tableViewCell.collectionView.tag = indexPath.section
+        
     }
     
     //called after cell displayed
@@ -168,7 +173,7 @@ extension HorizontalSlideTableViewController {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         
-        return Languages.sharedInstance.alphabets[section].set.count
+        return Languages.sharedInstance.alphabets[collectionView.tag].set.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -184,6 +189,8 @@ extension HorizontalSlideTableViewController {
 //        cell.layer.borderWidth = 1.0
 //        cell.layer.borderColor = UIColor.black.cgColor
         
+        
+        
         //remove cellCharLabel view to stop redrawing over top when reused
         
         if let labelToRemove = cell.viewWithTag(1) {
@@ -195,6 +202,8 @@ extension HorizontalSlideTableViewController {
         cellCharLabel = UILabel(frame: cell.bounds)
         cellCharLabel?.tag = 1
         
+
+        print("collectionview tag = \(collectionView.tag)" )
         cellCharLabel?.text = Languages.sharedInstance.alphabets[collectionView.tag].set[indexPath.row].char
         cellCharLabel?.textAlignment = .center
         cellCharLabel?.font = UIFont(name: "Helvetica", size: 40)

@@ -67,9 +67,9 @@ class Languages {
         
         // - English
         
-        let english: [Character] = "abcdefghijklmnopqrstuvwxyz".characters.map{Character(String($0))}
-        
-        alphabets.append(Alphabet(forLanguage: "English", characters: english))
+//        let english: [Character] = "abcdefghijklmnopqrstuvwxyz".characters.map{Character(String($0))}
+//        
+//        alphabets.append(Alphabet(forLanguage: "English", characters: english))
     }
     
     
